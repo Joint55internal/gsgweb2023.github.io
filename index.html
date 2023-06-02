@@ -10,25 +10,25 @@
       padding: 0;
     }
     
-    .header {
-      background-color:  #000000;
+     .header {
+      background-color: #000000;
       color: #fff;
       padding: 10px;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     
     .logo {
-      display: inline-block;
       height: 120px; /* Adjust the height as desired */
       width: auto; /* The width will adjust proportionally based on the height */
     }
     
-    .header-text {
-      display: inline-block;
-      margin-left: 100px;
-      margin-right: 200px;
+   .header-text {
+      flex-grow: 1;
+      margin: 0;
+      text-align: center;
       font-size: 24px;
-      line-height: 120px; /* Adjust the line-height to vertically center the text with the logo */
     }
     
     .header-links {
