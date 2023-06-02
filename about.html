@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>About | Ukraine GSG</title>
+  <title>Ukraine GSG Website</title>
   <style>
     body {
+      background-color: #f2f2f2;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
     
     .header {
-      background-color: #00308f;
+      background-color:  #000000;
       color: #fff;
       padding: 10px;
       text-align: center;
     }
     
-    .header h1 {
-      margin: 0;
+    .logo {
+      display: inline-block;
+      height: 120px; /* Adjust the height as desired */
+      width: auto; /* The width will adjust proportionally based on the height */
+    }
+    
+    .header-text {
+      display: inline-block;
+      margin-left: 400px;
+      margin-right: 400px;
+      font-size: 35px;
+      line-height: 120px; /* Adjust the line-height to vertically center the text with the logo */
+    }
+    
+    .header-links {
+      float: right;
+      line-height: 120px; /* Adjust the line-height to vertically center the links with the logo */
+    }
+    
+    .header-links a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
     }
     
     .content {
+      text-align: left;
       padding: 20px;
     }
     
     .content h2 {
       color: #00308f;
-    }
-    
-    .content p {
-      margin-bottom: 20px;
     }
     
     .footer {
@@ -42,36 +61,36 @@
 </head>
 <body>
   <div class="header">
-    <h1>About Us</h1>
+    <a href="./"><img src="gsglogo.png" alt="Logo" class="logo"></a>
+    <h1 class="header-text">About us</h1>
+    <div class="header-links">
+      <a href="./about">About</a> |
+      <a href="./news">News</a> |
+      <a href="./press">Press Release</a>
+    </div>
   </div>
-   <div class="header-links">
-    <a href="./">Home</a> |
-    <a href="./news">News</a> |
-    <a href="./press">Press Release</a>
-  </div>
+  
   <div class="content">
     <h2>Ukraine GSG Team</h2>
     <p>
       The Ukraine team is a group of dedicated individuals passionate about international affairs and diplomacy. Our team represents Ukraine in Global Simulation Game (GSG) engaging in stimulating debates and negotiations to find solutions to global issues.
     </p>
-    
-    <h2>About Ukraine</h2>
-    <p>
+    <h2>About ukraine</h2>
+    <p> 
       Ukraine, located in Eastern Europe, is the largest country within Europe. It shares borders with Belarus, Poland, Slovakia, Hungary, Romania, Moldova, and Russia. The capital and largest city of Ukraine is Kyiv.
     </p>
-    
     <p>
       Ukraine has a rich history and cultural heritage, with diverse traditions, art, and literature. The country has made significant contributions to fields such as science, technology, and aerospace. It is known for its beautiful landscapes, including the Carpathian Mountains and the Black Sea coastline.
     </p>
-    
     <p>
       Ukraine is an active participant in international organizations and promotes peace, cooperation, and human rights. The country plays a vital role in global affairs and strives to build strong diplomatic ties with other nations.
     </p>
+  
   </div>
   
   <div class="footer">
     <p>Kyiv, Ukraine</p>
-    <p>©️2023 ukraine2023gsg
+    <p>©️2023 ukraine2023gsg</p>
   </div>
 </body>
 </html>
