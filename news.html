@@ -64,7 +64,60 @@
       padding: 10px;
       text-align: center;
     }
+  .dropdown-row {
+     background-color: #000000;
+     padding: 10px;
+    }
+
+
+    .dropdown {
+     position: relative;
+     display: inline-block;
+    }
+
+     .dropbtn {
+      background-color: #000000;
+      color: #fff;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+     }
+
+     .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+     }
+
+     .dropdown-content a {
+      color: #000;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+     }
+
+      .dropdown:hover .dropdown-content {
+      display: block;
+     }
+
+
   </style>
+  <script>
+    const dropdown = document.querySelector('.header-dropdown');
+  
+    dropdown.addEventListener('change', function() {
+      const selectedOption = dropdown.options[dropdown.selectedIndex];
+      const url = selectedOption.value;
+  
+      if (url) {
+        window.location.href = url;
+      }
+    });
+  </script>
 </head>
 <body>
   <div class="header">
@@ -76,8 +129,24 @@
       <a href="./press">Press Release</a> |
       <a href="./anounce">Announcement</a>
     </div>
+  <div class="dropdown-row">
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="./">Home</a>
+        <a href="./about">About</a>
+        <a href="./news">News</a>
+      </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="./">Home</a>
+          <a href="./about">About</a>
+          <a href="./news">News</a>
+        </div>
+      </div>
   </div>
-  
   <div class="content">
     <h2>Latest news</h2>
     <p> 
