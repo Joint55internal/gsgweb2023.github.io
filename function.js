@@ -11,8 +11,13 @@ function handleTouchOutside(event) {
 // Event listener to detect click events outside the dropdown menu
 document.addEventListener('click', handleTouchOutside, true);
 
-// Event listener to detect touch events outside the dropdown menu
-document.addEventListener('touchstart', handleTouchOutside, true);
+// Event listener to detect touch events inside the dropdown menu and prevent propagation
+const dropdownContents = document.querySelectorAll('.dropdown-content');
+dropdownContents.forEach((dropdown) => {
+  dropdown.addEventListener('touchstart', function (event) {
+    event.stopPropagation();
+  });
+});
 
 // Function to toggle the display of the dropdown menu
 function toggleDropdown(event) {
