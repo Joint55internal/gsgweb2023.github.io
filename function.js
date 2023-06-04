@@ -17,10 +17,11 @@ document.addEventListener('touchstart', handleTouchOutside, true);
 // Function to toggle the display of the dropdown menu
 function toggleDropdown(event) {
   const dropdown = event.currentTarget.nextElementSibling;
-  dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+  const isHidden = dropdown.style.display === 'none';
+  dropdown.style.display = isHidden ? 'block' : 'none';
 }
 
-// Event listener to toggle the display of the dropdown menu when the button is clicked
+// Event listener to toggle the display of the dropdown menu when the button is clicked or touched
 const dropdownButtons = document.querySelectorAll('.dropbtn');
 dropdownButtons.forEach((button) => {
   button.addEventListener('click', toggleDropdown);
