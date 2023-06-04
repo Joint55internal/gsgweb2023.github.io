@@ -123,7 +123,50 @@
       height: 200px; /* Adjust the height as desired */
     }
   </style>
-  <script src="./function.js"></script>
+<script src="./function.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QT60QMQ9CT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QT60QMQ9CT');
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var consentCookie = localStorage.getItem('cookieConsent');
+      if (!consentCookie) {
+        $('.cookie-banner').fadeIn();
+      }
+    });
+
+    function acceptCookies() {
+      $('.cookie-banner').fadeOut();
+      localStorage.setItem('cookieConsent', true);
+    }
+  </script>
+  <style>
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      display: none;
+    }
+
+    .cookie-banner button {
+      background-color: #f1d600;
+      color: #000;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
   </head>
   <body>
     <body>
@@ -232,6 +275,10 @@
   <div class="footer">
     <p>kyiv, Ukraine</p>
     <p>©️2023 ukraine2023gsg
+  </div>
+  <div class="cookie-banner">
+    This website uses cookies to ensure you get the best experience. By using this website, you agree to our <a href="./cok">cookie policy</a>.
+    <button onclick="acceptCookies()">Got it!</button>
   </div>
 </body>
 </html>
