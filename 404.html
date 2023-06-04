@@ -2,36 +2,129 @@
 <html>
 <head>
     <title>404 Error: Page Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            background-color: #f8f8f8;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Courier New', monospace;
             text-align: center;
-            font-family: Arial, sans-serif;
+            padding: 50px;
         }
         h1 {
-            color: #FF5733;
-            font-size: 36px;
+            font-size: 48px;
+            margin-bottom: 20px;
         }
         img {
             max-width: 300px;
             margin-top: 30px;
         }
         p {
-            color: #777;
             font-size: 18px;
             line-height: 24px;
+            margin-bottom: 20px;
         }
         a {
-            color: #FF5733;
+            color: #00ff00;
             text-decoration: none;
+        }
+        .glitch {
+            font-size: 24px;
+            animation: glitch-effect 1.5s infinite;
+        }
+        @keyframes glitch-effect {
+            0% {
+                transform: none;
+                opacity: 1;
+            }
+            5% {
+                transform: skew(0.5deg, -0.9deg);
+                opacity: 0.75;
+            }
+            10% {
+                transform: skew(-1deg, 0.3deg);
+                opacity: 0.6;
+            }
+            15% {
+                transform: skew(0.8deg, 0.1deg);
+                opacity: 0.9;
+            }
+            20% {
+                transform: skew(0.2deg, -0.5deg);
+                opacity: 0.65;
+            }
+            25% {
+                transform: skew(-0.7deg, -0.2deg);
+                opacity: 0.85;
+            }
+            30% {
+                transform: skew(0.4deg, 0.3deg);
+                opacity: 0.5;
+            }
+            35% {
+                transform: skew(-0.5deg, 0.6deg);
+                opacity: 0.75;
+            }
+            40% {
+                transform: skew(0.8deg, -0.4deg);
+                opacity: 0.55;
+            }
+            45% {
+                transform: skew(-0.3deg, -0.7deg);
+                opacity: 0.8;
+            }
+            50% {
+                transform: skew(0.7deg, 0.3deg);
+                opacity: 0.6;
+            }
+            55% {
+                transform: skew(-0.4deg, 0.9deg);
+                opacity: 0.9;
+            }
+            60% {
+                transform: skew(1deg, -0.2deg);
+                opacity: 0.7;
+            }
+            65% {
+                transform: skew(0.2deg, 0.5deg);
+                opacity: 0.95;
+            }
+            70% {
+                transform: skew(-0.6deg, -0.3deg);
+                opacity: 0.8;
+            }
+            75% {
+                transform: skew(0.5deg, -0.6deg);
+                opacity: 0.65;
+            }
+            80% {
+                transform: skew(-0.8deg, 0.4deg);
+                opacity: 0.85;
+            }
+            85% {
+                transform: skew(0.3deg, 0.7deg);
+                opacity: 0.5;
+            }
+            90% {
+                transform: skew(-0.7deg, -0.3deg);
+                opacity: 0.75;
+            }
+            95% {
+                transform: skew(0.4deg, -0.9deg);
+                opacity: 0.55;
+            }
+            100% {
+                transform: skew(-1deg, 0.2deg);
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Oops! 404 Error</h1>
-    <img src="404.png" alt="404 Image">
-    <p>Uh-oh! Looks like you took a wrong turn on the internet. The page you were searching for seems to have vanished into thin air. Our team of highly trained internet detectives is on the case!</p>
-    <p>Feel free to go <a href="javascript:history.back()">back</a> to the previous page or visit our <a href="./">homepage</a> to continue your internet adventure.</p>
-    <p>Remember, even the most experienced surfers wipe out sometimes. We appreciate your understanding!</p>
+    <h1>404 Error: File Not Found</h1>
+    <img src="404.png" alt="Hacker GIF">
+    <p class="glitch">Uh-oh! Looks like you've stumbled upon a hidden directory. Our firewalls have detected your presence, but this file seems to have vanished into thin air.</p>
+    <p class="glitch">We're sorry, but it seems the system is encrypted with a 128-bit algorithm that even our best hackers haven't cracked yet. Feel free to <a href="/">return to safety</a> or explore other intriguing <a href="/secret">secret</a> corners of our network.</p>
+    <p class="glitch">Remember, curiosity may have killed the cat, but in cyberspace, it could lead to extraordinary discoveries. Stay alert, and happy hacking!</p>
 </body>
 </html>
