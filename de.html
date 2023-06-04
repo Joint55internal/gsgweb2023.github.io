@@ -2,152 +2,171 @@
 <html>
 <head>
   <title>Die Regierung Informiert | Startseite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: url("home.png") no-repeat center center fixed;
-      background-size: cover;
-    }
-    
-     .header {
-      background-color: #000000;
-      color: #fff;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .logo {
-      height: 120px; /* Adjust the height as desired */
-      width: auto; /* The width will adjust proportionally based on the height */
-    }
-    
-   .header-text {
-      flex-grow: 1;
-      margin: 0;
-      text-align: center;
-      font-size: 34px;
-    }
-    
-    .header-links {
-      float: right;
-      line-height: 120px; /* Adjust the line-height to vertically center the links with the logo */
-    }
-    
-    .header-links a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 10px;
-    }
-    .blank-part {
-      height: 200px; /* Adjust the height as desired */
-    }
-   .content {
-      text-align: left;
-      padding: 20px;
-      margin: 0 auto;
-      max-width: 800px;
-      background-color: rgba(255, 255, 255, 0.8);
-    }
-    
-    .footer {
-      background-color: #005bb5;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
-    
-    .dropdown-row {
-     background-color: #000000;
-     padding: 10px;
-    }
-
-
-    .dropdown {
-     position: relative;
-     display: inline-block;
-    }
-
-     .dropbtn {
-      background-color: #000000;
-      color: #fff;
-      padding: 10px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-     }
-
-     .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-     }
-
-     .dropdown-content a {
-      color: #000;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-     }
-
-      .dropdown:hover .dropdown-content {
-      display: block;
-     }
-     .marker {
-      background-color: yellow;
-      padding: 2px 4px;
-      color: #000;
-      text-decoration: underline;
-    }
-
-  </style>
-  <script>
-    const dropdown = document.querySelector('.header-dropdown');
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("home.png") no-repeat center center fixed;
+    background-size: cover;
+  }
   
-    dropdown.addEventListener('change', function() {
-      const selectedOption = dropdown.options[dropdown.selectedIndex];
-      const url = selectedOption.value;
+  .header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
   
-      if (url) {
-        window.location.href = url;
-      }
-    });
-  </script>
+  .logo {
+    height: 120px; /* Adjust the height as desired */
+    width: auto; /* The width will adjust proportionally based on the height */
+  }
+  
+  .header-text {
+    flex-grow: 1;
+    margin: 0;
+    text-align: center;
+    font-size: 34px;
+  }
+  
+  .header-links {
+    line-height: 120px; /* Adjust the line-height to vertically center the links with the logo */
+  }
+  
+  .header-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0px;
+    margin-right: 60px;
+  }
+  
+  .content {
+    text-align: left;
+    padding: 20px;
+    margin: 160px auto 20px; /* Adjust the top and bottom margin to create space for the fixed header */
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  .footer {
+    background-color: #005bb5;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .dropdown-row {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    padding: 10px;
+    position: sticky;
+    top: 120px; /* Adjust the top position to match the logo height */
+    z-index: 998; /* Dropdown is above the content */
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px; /* Add some spacing between the dropdown buttons */
+  }
+  
+  .dropbtn {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .marker {
+    background-color: yellow;
+    padding: 2px 4px;
+    color: #000;
+    text-decoration: underline;
+  }
+  .blank-part {
+    height: 200px; /* Adjust the height as desired */
+  }
+</style>
+<script>
+  const dropdown = document.querySelector('.header-dropdown');
+
+  dropdown.addEventListener('change', function() {
+    const selectedOption = dropdown.options[dropdown.selectedIndex];
+    const url = selectedOption.value;
+
+    if (url) {
+      window.location.href = url;
+    }
+  });
+</script>
 </head>
 <body>
   <div class="header">
-    <a href="./de"><img src="gsglogo.png" alt="Logo" class="logo"></a>
-    <h1 class="header-text">Die Regierung der Ukraine (GSG)</h1>
+    <a href="./"><img src="gsglogo.png" alt="Logo" class="logo"></a>
+    <h1 class="header-text"></h1>
     <div class="header-links">
-      <a href="./">English</a> |
-      <a href="./de">Deutsch</a>
-      <a> </a>|||||||
-    </div>
-  </div>
+      <div class="dropdown">
+         <button class="dropbtn">///</button>
+             <div class="dropdown-content">
+                <a href="./">EN</a>
+                <a href="./de">DE</a>
+                <a href="./de">InFo</a>            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   <div class="dropdown-row">
     <div class="dropdown">
       <button class="dropbtn">Menü</button>
       <div class="dropdown-content">
-        <a href="./de">Home</a>
-        <a href="./aboutde">About</a>
-        <a href="./announcede">Announcement</a>
+        <a href="./">Home</a>
+        <a href="./about">About</a>
+        <a href="./announce">Announcement</a>
       </div>
     </div>
     <div class="dropdown">
       <button class="dropbtn">Information</button>
       <div class="dropdown-content">
-        <a href="./newsde">News</a>
-        <a href="./pressde">Pressemitteilungen</a>
+        <a href="./news">News</a>
+        <a href="./press">Pressemitteilungen</a>
       </div>
     </div>
   </div>
-  
+
   <div class="content">
     <h2>
         Willkommen auf der offiziellen Website der Ukraine bei Global Simulation Game (GSG). Hier finden Sie Informationen über unsere Regierung.
