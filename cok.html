@@ -68,6 +68,22 @@
       padding: 10px;
       text-align: center;
     }
+    .menu-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    .line {
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      margin-bottom: 4px;
+    }
     
     .dropdown-row {
       display: flex;
@@ -175,8 +191,14 @@
         <a href="./"><img src="gsglogo.png" alt="Logo" class="logo"></a>
         <h1 class="header-text"></h1>
         <div class="header-links">
-          <div class="dropdown">
-             <button class="dropbtn">///</button>
+       <div class="dropdown">
+         <button class="dropbtn">
+          <div class="menu-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        </button>
                  <div class="dropdown-content">
                     <a href="./">EN</a>
                     <a href="./de">DE</a>
