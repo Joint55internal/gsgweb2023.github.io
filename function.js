@@ -8,8 +8,8 @@ function handleTouchOutside(event) {
   });
 }
 
-// Event listener to detect touch events outside the dropdown menu
-document.addEventListener('touchstart', handleTouchOutside, true);
+// Event listener to detect click events outside the dropdown menu
+document.addEventListener('click', handleTouchOutside, true);
 
 // Function to toggle the display of the dropdown menu
 function toggleDropdown(event) {
