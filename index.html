@@ -140,29 +140,41 @@
 
   gtag('config', 'G-QT60QMQ9CT');
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
-    window.addEventListener("load", function() {
-      window.cookieconsent.initialise({
-        "palette": {
-          "popup": {
-            "background": "#000",
-            "text": "#fff"
-          },
-          "button": {
-            "background": "#f1d600",
-            "text": "#000"
-          }
-        },
-        "content": {
-          "message": "This website uses cookies to ensure you get the best experience on our website.",
-          "dismiss": "Got it!",
-          "link": "Learn more",
-          "href": "your-cookie-policy-url"
-        }
-      });
+    $(document).ready(function() {
+      var consentCookie = localStorage.getItem('cookieConsent');
+      if (!consentCookie) {
+        $('.cookie-banner').fadeIn();
+      }
     });
+
+    function acceptCookies() {
+      $('.cookie-banner').fadeOut();
+      localStorage.setItem('cookieConsent', true);
+    }
   </script>
+  <style>
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      display: none;
+    }
+
+    .cookie-banner button {
+      background-color: #f1d600;
+      color: #000;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <div class="header">
@@ -241,6 +253,10 @@
   <div class="footer">
     <p>Kyiv, Ukraine</p>
     <p>©️2023 Ukraine2023GSG</p>
+  </div>
+  <div class="cookie-banner">
+    This website uses cookies to ensure you get the best experience. By using this website, you agree to our <a href="your-cookie-policy-url">cookie policy</a>.
+    <button onclick="acceptCookies()">Got it!</button>
   </div>
 </body>
 </html>
