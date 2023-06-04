@@ -122,16 +122,17 @@
     }
   </style>
   <script>
-    const dropdown = document.querySelector('.header-dropdown');
-  
-    dropdown.addEventListener('change', function() {
-      const selectedOption = dropdown.options[dropdown.selectedIndex];
-      const url = selectedOption.value;
-  
-      if (url) {
-        window.location.href = url;
-      }
+   function handleTouchOutside(event) {
+  if (!event.target.closest('.dropdown')) {
+    const dropdowns = document.querySelectorAll('.dropdown-content');
+    dropdowns.forEach((dropdown) => {
+      dropdown.style.display = 'none';
     });
+  }
+}
+
+// Event listener to detect touch events outside the dropdown menu
+document.addEventListener('touchstart', handleTouchOutside, true);
   </script>
 </head>
 <body>
