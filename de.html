@@ -1,149 +1,289 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Die Regierung Informiert | Startseite</title>
+  <link rel="icon" href="slogo2.png" type="image/x-icon">
+  <title>Ukraine GSG Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-  body {
-    font-family: Futura;
-    margin: 0;
-    padding: 0;
-    background: url("home.png") no-repeat center center fixed;
-    background-size: cover;
-  }
-  
-  .header {
-    background-color: #000000;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-  }
-  
-  .logo {
-    height: 120px; /* Adjust the height as desired */
-    width: auto; /* The width will adjust proportionally based on the height */
-  }
-  
-  .header-text {
-    flex-grow: 1;
-    margin: 0;
-    text-align: center;
-    font-size: 34px;
-  }
-  
-  .header-links {
-    line-height: 120px; /* Adjust the line-height to vertically center the links with the logo */
-  }
-  
-  .header-links a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 0px;
-    margin-right: 60px;
-  }
-  
-  .content {
-    text-align: left;
-    padding: 20px;
-    margin: 160px auto 20px; /* Adjust the top and bottom margin to create space for the fixed header */
-    max-width: 800px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-  .footer {
-    background-color: #005bb5;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .dropdown-row {
-    display: flex;
-    justify-content: center;
-    background-color: #000000;
-    padding: 10px;
-    position: sticky;
-    top: 120px; /* Adjust the top position to match the logo height */
-    z-index: 998; /* Dropdown is above the content */
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    margin-right: 10px; /* Add some spacing between the dropdown buttons */
-  }
-  
-  .dropbtn {
-    background-color: #000000;
-    color: #fff;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: #000;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .marker {
-    background-color: yellow;
-    padding: 2px 4px;
-    color: #000;
-    text-decoration: underline;
-  }
-  .blank-part {
-    height: 200px; /* Adjust the height as desired */
-  }
-</style>
-<script>
-  const dropdown = document.querySelector('.header-dropdown');
+    @font-face {
+  font-family: 'a-0';
+  src: url('./a-0.ttf') format('truetype'); /* Update the path to the font file */
+  font-weight: normal;
+  font-style: italic;
+}
+    @font-face {
+  font-family: 'a-1';
+  src: url('./a-1.ttf') format('truetype'); /* Update the path to the font file */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'a-2';
+  src: url('./a-2.ttf') format('truetype'); /* Update the path to the font file */
+  font-weight: bold;
+  font-style: normal;
+}
+    body {
+      font-family: 'a-0','a-1','a-2';
 
-  dropdown.addEventListener('change', function() {
-    const selectedOption = dropdown.options[dropdown.selectedIndex];
-    const url = selectedOption.value;
-
-    if (url) {
-      window.location.href = url;
+      margin: 0;
+      padding: 0;
+      background: url("news.png") no-repeat center center fixed;
+      background-size: cover;
     }
-  });
+    
+    .header {
+      background-color: #000000;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+    }
+    
+    .logo {
+      height: 120px; /* Adjust the height as desired */
+      width: auto; /* The width will adjust proportionally based on the height */
+    }
+
+    h1 {
+      font-family: 'a-2';
+      /* Apply the BundessansWeb-Bold font to h1 elements */
+    }
+    h2 {
+      font-family: 'a-2';
+    }
+    h3 {
+      font-family: 'a-1';
+    }
+    
+    .header-text {
+      flex-grow: 1;
+      margin: 0;
+      text-align: center;
+      font-size: 34px;
+    }
+    
+    .header-links {
+      line-height: 120px; /* Adjust the line height to vertically center the links with the logo */
+    }
+    
+    .header-links a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 0px;
+      margin-right: 60px;
+    }
+    
+    .content {
+      text-align: left;
+      padding: 20px;
+      margin: 160px auto 20px; /* Adjust the top and bottom margin to create space for the fixed header */
+      max-width: 800px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .content2 {
+      text-align: left;
+      padding: 20px;
+      margin: 20px auto 20px; /* Adjust the top and bottom margin to create space for the fixed header */
+      max-width: 800px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .footer {
+      background-color: #005bb5;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .menu-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    .line {
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      margin-bottom: 4px;
+    }
+    
+    .dropdown-row {
+      display: flex;
+      justify-content: center;
+      background-color: #000000;
+      padding: 10px;
+      position: sticky;
+      top: 120px; /* Adjust the top position to match the logo height */
+      z-index: 998; /* Dropdown is above the content */
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-right: 10px; /* Add some spacing between the dropdown buttons */
+    }
+    
+    .dropbtn {
+      background-color: #000000;
+      color: #fff;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: #000;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .marker {
+      background-color: yellow;
+      padding: 2px 4px;
+      color: #000;
+      text-decoration: underline;
+    }
+    .blank-part {
+      height: 200px; /* Adjust the height as desired */
+    }
+  </style>
+<script src="./function.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QT60QMQ9CT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QT60QMQ9CT');
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var consentCookie = localStorage.getItem('cookieConsent');
+      if (!consentCookie) {
+        $('.cookie-banner').fadeIn();
+      }
+    });
+
+    function acceptCookies() {
+      $('.cookie-banner').fadeOut();
+      localStorage.setItem('cookieConsent', true);
+    }
+  </script>
+  <style>
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      display: none;
+    }
+
+    .cookie-banner button {
+      background-color: #f1d600;
+      color: #000;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+<script src="./function.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QT60QMQ9CT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QT60QMQ9CT');
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var consentCookie = localStorage.getItem('cookieConsent');
+      if (!consentCookie) {
+        $('.cookie-banner').fadeIn();
+      }
+    });
+
+    function acceptCookies() {
+      $('.cookie-banner').fadeOut();
+      localStorage.setItem('cookieConsent', true);
+    }
+  </script>
+  <style>
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      display: none;
+    }
+
+    .cookie-banner button {
+      background-color: #f1d600;
+      color: #000;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <div class="header">
-    <a href="./de"><img src="gsglogo.png" alt="Logo" class="logo"></a>
+    <a href="./"><img src="gsglogo.png" alt="Logo" class="logo"></a>
     <h1 class="header-text"></h1>
     <div class="header-links">
       <div class="dropdown">
-         <button class="dropbtn">///</button>
+        <button class="dropbtn">
+          <div class="menu-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        </button>
              <div class="dropdown-content">
                 <a href="./">EN</a>
                 <a href="./de">DE</a>
-                <a href="./de">InFo</a>            
+                <a href="./aboutde">InFo</a>            
               </div>
             </div>
           </div>
@@ -153,9 +293,9 @@
     <div class="dropdown">
       <button class="dropbtn">Menü</button>
       <div class="dropdown-content">
-        <a href="./de">Home</a>
+        <a href="./">Startseite</a>
         <a href="./aboutde">About</a>
-        <a href="./announcede">Announcement</a>
+        <a href="./announcede">Ankündigung</a>
       </div>
     </div>
     <div class="dropdown">
@@ -166,7 +306,6 @@
       </div>
     </div>
   </div>
-
   <div class="content">
     <h2>
         Willkommen auf der offiziellen Website der Ukraine bei Global Simulation Game (GSG). Hier finden Sie Informationen über unsere Regierung.
@@ -174,7 +313,7 @@
     <p class="marker">
         Haftungsausschluss: Diese Website ist keine tatsächliche Regierungswebsite der Ukraine. Sie ist ausschließlich für Teilnehmer der GSG 2023 bestimmt.
     </p>
-   <p>
+    <p>
     Auf dieser Website finden Sie Informationen über unsere Regierung, Politiken, Nachrichten und Initiativen. Bleiben Sie über die neuesten Entwicklungen auf dem Laufenden und erkunden Sie die verschiedenen Ressourcen, um mehr über die Rolle der Ukraine in der globalen Gemeinschaft zu erfahren.
     </p>
    <p>
@@ -187,17 +326,49 @@
     Haben Sie Fragen? Klicken Sie <a href="https://youtu.be/dQw4w9WgXcQ"> hier</a>, um mehr zu erfahren!
   </p>
   </div>
-  <div class="blank-part"></div>
-  <div class="blank-part"></div>
-  <div class="blank-part"></div>
-  <div class="blank-part"></div>
-  <div class="blank-part"></div>
-  <div class="blank-part"></div>
+  <div class="content2">
+    <h2>
+      Aktuelle Nachrichten
+    </h2>
+    <h3>
+      Russia targets airbase
+    </h3>
+    <p>
+     ・Two cruise missiles fired by Russian forces hit an airfield in central Ukraine, while four others were downed by the air defences.
+    </p>
+    <p>
+     ・An air raid hit a residential district in the central Ukrainian city of Dnipro, killing a two-year-old girl and injuring 22 others.
+    </p>
+    <h3>
+    Russian attack wounds 20, including children in Dnipro, Ukraine
+    </h3>
+  </div>
+  <div class="content2">
+  <h2>
+    Ankündigung
+    </h2>
+   <h3>
+     <a href="./651">June 5th, 2023 - Press Conference- To Media Representitives</a>
+     </h3>
+    <p>
+      Ukraine will host Press Conference at 11:30 AM at RY303...
+    </p>
+   <h3>
+   <a href="./64">June 4th, 2023</a>
+   </h3>
+   <p>
+   We are delighted to announce the launch of our offical website, designed to provide...
+   </p>
+  </div>
   <div class="blank-part"></div>
   <div class="blank-part"></div>
   <div class="footer">
     <p>Kyiv, Ukraine</p>
-    <p>©️2023 ukraine2023gsg
+    <p>©️2023 Ukraine2023GSG</p>
+  </div>
+  <div class="cookie-banner">
+    Wir verwenden Cookies, um Ihnen die optimale Nutzung unserer Webseite zu ermöglichen. <a href="./cok">Zur Datenschutzerklärung</a>.
+    <button onclick="acceptCookies()">OK!</button>
   </div>
 </body>
 </html>
