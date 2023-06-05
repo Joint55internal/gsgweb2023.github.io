@@ -5,8 +5,27 @@
   <title>Ukraine GSG Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    @font-face {
+  font-family: 'a-0';
+  src: url('./a-0.ttf') format('truetype'); /* Update the path to the font file */
+  font-weight: normal;
+  font-style: italic;
+}
+   @font-face {
+  font-family: 'a-1';
+  src: url('./a-1.ttf') format('truetype'); /* Update the path to the font file */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'a-2';
+  src: url('./a-2.ttf') format('truetype'); /* Update the path to the font file */
+  font-weight: bold;
+  font-style: normal;
+}
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'a-0','a-1','a-2';
+
       margin: 0;
       padding: 0;
       background: url("news.png") no-repeat center center fixed;
@@ -30,6 +49,17 @@
     .logo {
       height: 120px; /* Adjust the height as desired */
       width: auto; /* The width will adjust proportionally based on the height */
+    }
+
+    h1 {
+      font-family: 'a-2';
+      /* Apply the BundessansWeb-Bold font to h1 elements */
+    }
+    h2 {
+      font-family: 'a-2';
+    }
+    h3 {
+      font-family: 'a-1';
     }
     
     .header-text {
@@ -148,98 +178,50 @@
       height: 200px; /* Adjust the height as desired */
     }
   </style>
- <style>
-    .glitch {
-            font-size: 24px;
-            animation: glitch-effect 1.5s infinite;
-        }
-        @keyframes glitch-effect {
-            0% {
-                transform: none;
-                opacity: 1;
-            }
-            5% {
-                transform: skew(0.5deg, -0.9deg);
-                opacity: 0.75;
-            }
-            10% {
-                transform: skew(-1deg, 0.3deg);
-                opacity: 0.6;
-            }
-            15% {
-                transform: skew(0.8deg, 0.1deg);
-                opacity: 0.9;
-            }
-            20% {
-                transform: skew(0.2deg, -0.5deg);
-                opacity: 0.65;
-            }
-            25% {
-                transform: skew(-0.7deg, -0.2deg);
-                opacity: 0.85;
-            }
-            30% {
-                transform: skew(0.4deg, 0.3deg);
-                opacity: 0.5;
-            }
-            35% {
-                transform: skew(-0.5deg, 0.6deg);
-                opacity: 0.75;
-            }
-            40% {
-                transform: skew(0.8deg, -0.4deg);
-                opacity: 0.55;
-            }
-            45% {
-                transform: skew(-0.3deg, -0.7deg);
-                opacity: 0.8;
-            }
-            50% {
-                transform: skew(0.7deg, 0.3deg);
-                opacity: 0.6;
-            }
-            55% {
-                transform: skew(-0.4deg, 0.9deg);
-                opacity: 0.9;
-            }
-            60% {
-                transform: skew(1deg, -0.2deg);
-                opacity: 0.7;
-            }
-            65% {
-                transform: skew(0.2deg, 0.5deg);
-                opacity: 0.95;
-            }
-            70% {
-                transform: skew(-0.6deg, -0.3deg);
-                opacity: 0.8;
-            }
-            75% {
-                transform: skew(0.5deg, -0.6deg);
-                opacity: 0.65;
-            }
-            80% {
-                transform: skew(-0.8deg, 0.4deg);
-                opacity: 0.85;
-            }
-            85% {
-                transform: skew(0.3deg, 0.7deg);
-                opacity: 0.5;
-            }
-            90% {
-                transform: skew(-0.7deg, -0.3deg);
-                opacity: 0.75;
-            }
-            95% {
-                transform: skew(0.4deg, -0.9deg);
-                opacity: 0.55;
-            }
-            100% {
-                transform: skew(-1deg, 0.2deg);
-                opacity: 1;
-            }
-        }
-</style>
+<script src="./function.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QT60QMQ9CT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QT60QMQ9CT');
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var consentCookie = localStorage.getItem('cookieConsent');
+      if (!consentCookie) {
+        $('.cookie-banner').fadeIn();
+      }
+    });
+
+    function acceptCookies() {
+      $('.cookie-banner').fadeOut();
+      localStorage.setItem('cookieConsent', true);
+    }
+  </script>
+  <style>
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      display: none;
+    }
+
+    .cookie-banner button {
+      background-color: #f1d600;
+      color: #000;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
 <script src="./function.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QT60QMQ9CT"></script>
 <script>
