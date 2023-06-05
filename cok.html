@@ -5,11 +5,30 @@
     <title>Ukraine GSG Website | Announcement</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+    @font-face {
+  font-family: 'a-0';
+  src: url('./a-0.ttf') format('truetype'); /* Update the path to the font file */
+  font-weight: normal;
+  font-style: italic;
+}
+    @font-face {
+  font-family: 'a-1';
+  src: url('./a-1.ttf') format('truetype'); /* Update the path to the font file */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'a-2';
+  src: url('./a-2.ttf') format('truetype'); /* Update the path to the font file */
+  font-weight: bold;
+  font-style: normal;
+}
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'a-0','a-1','a-2';
+
       margin: 0;
       padding: 0;
-      background: url("home.png") no-repeat center center fixed;
+      background: url("news.png") no-repeat center center fixed;
       background-size: cover;
     }
     
@@ -31,6 +50,19 @@
       height: 120px; /* Adjust the height as desired */
       width: auto; /* The width will adjust proportionally based on the height */
     }
+
+    h1 {
+      font-family: 'a-2';
+      /* Apply the BundessansWeb-Bold font to h1 elements */
+    }
+    h2 { 
+      color: #00308f;
+      font-family: 'a-2';
+    }
+    h3 {
+      font-family: 'a-1';
+    }
+    
     
     .header-text {
       flex-grow: 1;
@@ -40,7 +72,7 @@
     }
     
     .header-links {
-      line-height: 120px; /* Adjust the line-height to vertically center the links with the logo */
+      line-height: 120px; /* Adjust the line height to vertically center the links with the logo */
     }
     
     .header-links a {
@@ -59,9 +91,17 @@
       border-radius: 5px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     }
-    .content h2 {
-        color: #00308f;
-      }
+
+    .content2 {
+      text-align: left;
+      padding: 20px;
+      margin: 20px auto 20px; /* Adjust the top and bottom margin to create space for the fixed header */
+      max-width: 800px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    
     .footer {
       background-color: #005bb5;
       color: #fff;
