@@ -1,94 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>404 Error - Page Not Found</title>
+  <link rel="icon" href="slogo2.png" type="image/x-icon">
+  <title>404 - Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-
     body {
-      background-color: #000000;
-      color: #FF0000;
-      font-family: 'Courier New', Courier, monospace;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
       text-align: center;
-      margin-top: 150px;
-      overflow: hidden;
+      padding: 50px;
     }
-    
+
     h1 {
-      font-size: 60px;
-      margin-bottom: 20px;
-      font-family: 'Creepster', cursive;
+      font-size: 35px;
     }
-    
+
     p {
+      font-size: 24px;
+    }
+
+    .bsod {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      display: inline-block;
+      border: 5px solid #00FFFF;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .error-code {
+      font-size: 100px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .error-message {
+      font-size: 30px;
+      margin: 20px 0;
+    }
+
+    .mysterious-symbol {
+      font-size: 150px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #00FFFF;
+    }
+
+    .button-container {
+      margin-top: 40px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
       font-size: 20px;
-      margin-bottom: 10px;
-      font-family: 'Creepster', cursive;
-    }
-    
-    .movie-container {
-      position: relative;
-      width: 100%;
-      height: 500px;
-      overflow: hidden;
-      margin-bottom: 30px;
-    }
-    
-    .movie-code {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      font-family: 'Creepster', cursive;
-      font-size: 36px;
-      line-height: 1.4;
-      white-space: pre;
-      animation: flicker-animation 0.1s ease-in-out infinite;
-    }
-    
-    .creepy-graphic {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1);
-      opacity: 1;
-      animation: zoom-animation 10s ease-in-out infinite,
-                 fadeout-animation 10s linear infinite;
-    }
-    
-    @keyframes flicker-animation {
-      0% { opacity: 1; }
-      80% { opacity: 0.8; }
-      100% { opacity: 1; }
-    }
-    
-    @keyframes zoom-animation {
-      0% { transform: translate(-50%, -50%) scale(1); }
-      50% { transform: translate(-50%, -50%) scale(1.2); }
-      100% { transform: translate(-50%, -50%) scale(1); }
-    }
-    
-    @keyframes fadeout-animation {
-      0% { opacity: 1; }
-      80% { opacity: 0.8; }
-      100% { opacity: 0; }
+      background-color: #00FFFF;
+      color: #000;
+      border-radius: 20px;
+      text-decoration: none;
+      margin: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>404 Error - Page Not Found</h1>
-  <p>The requested page could not be found on the server.</p>
-  <p>Please check the URL or go back to the <a href="./">homepage</a>.</p>
-  <div class="movie-container">
-    <code class="movie-code">
- ██╗   ██╗██████╗ ███████╗██████╗ ████████╗
-██╔════╝██╔══╝
-██║     ██║   ██║██║   ██║███║   
-╚██████╗╚██████╔╝ ╚████╔██║   
- ╚═════╝ ╚═════╝   ╚═══╝   
-    </code>
-    <img src="scary.png" class="creepy-graphic" alt="Creepy Graphic">
+  <div class="bsod">
+    <h1>Oops!</h1>
+    <p class="error-code">404</p>
+    <p class="error-message">This is awkward... You are looking for someone that doesn't actually exist.</p>
+    <p class="mysterious-symbol">?</p>
+    <p>But Don't worry, friends and families are waiting for you at Home. Let's go!</p>
+    <div class="button-container">
+      <a class="button" href="javascript:history.back()">Go Back</a>
+      <a class="button" href="./">Go back to Home</a>
+    </div>
   </div>
 </body>
 </html>
