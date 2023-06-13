@@ -205,3 +205,8 @@ h3 {
   cursor: pointer;
   text-decoration: none; /* Remove underline */
 }
+.heart {    /* heart for 404 page */
+  color: red;
+  font-size: 100px;
+  text-align: center;
+}
