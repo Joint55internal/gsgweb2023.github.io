@@ -2,80 +2,99 @@
 <html>
 <head>
   <link rel="icon" href="slogo2.png" type="image/x-icon">
-  <title>404 - Page Not Found</title>
+  <title>Ukraine GSG Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-    }
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+  <script src="./function.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QT60QMQ9CT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QT60QMQ9CT');
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var consentCookie = localStorage.getItem('cookieConsent');
+      if (!consentCookie) {
+        $('.cookie-banner').fadeIn();
+      }
+    });
 
-    h1 {
-      font-size: 35px;
+    function acceptCookies() {
+      $('.cookie-banner').fadeOut();
+      localStorage.setItem('cookieConsent', true);
     }
-
-    p {
-      font-size: 24px;
-    }
-
-    .bsod {
-      background-color: #000;
-      color: #fff;
-      padding: 20px;
-      display: inline-block;
-      border: 5px solid #00FFFF;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .error-code {
-      font-size: 100px;
-      font-weight: bold;
-      margin: 0;
-    }
-
-    .error-message {
-      font-size: 30px;
-      margin: 20px 0;
-    }
-
-    .mysterious-symbol {
-      font-size: 150px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      color: #00FFFF;
-    }
-
-    .button-container {
-      margin-top: 40px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 20px;
-      background-color: #00FFFF;
-      color: #000;
-      border-radius: 20px;
-      text-decoration: none;
-      margin: 10px;
-    }
-  </style>
+  </script>
 </head>
 <body>
-  <div class="bsod">
-    <h1>Oops!</h1>
-    <p class="error-code">404</p>
-    <p class="error-message">This is awkward... You are looking for someone that doesn't actually exist.</p>
-    <p class="mysterious-symbol">?</p>
-    <p>Your friends are waiting for you at home so please...</p>
-    <div class="button-container">
-      <a class="button" href="javascript:history.back()">Go Back</a>
-      <a class="button" href="./">Go back to Home</a>
+  <div class="header">
+    <a href="./"><img src="gsglogo.png" alt="Logo" class="logo"></a>
+    <h1 class="header-text"></h1>
+    <div class="header-links">
+      <div class="dropdown">
+        <button class="dropbtn">
+          <div class="menu-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        </button>
+             <div class="dropdown-content">
+                <a href="./">EN</a>
+                <a href="./de">DE</a>
+                <a href="./about">InFo</a>            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <div class="dropdown-row">
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="./">Home</a>
+        <a href="./about">About</a>
+        <a href="./announce">Announcement</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">News</button>
+      <div class="dropdown-content">
+        <a href="./news">News</a>
+        <a href="./press">Press Release</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">European Integration</button>
+      <div class="dropdown-content">
+        <a href="./">Partnership</a>
+        <a href="./eucope">Cooperation with the Council of Europe </a>
+        <a href="./announce">Implementation of the EU-Ukraine Association Agreement</a>
+      </div>
     </div>
   </div>
+  <div class="content">
+    <h1>404 and heeardbreaks</h1>
+    <h3>The page you are looking for could not be found</h3>
+    <p>Maybe you shoud go back?</p>
+    <a class="home-button" href="./">Home</a>
+    <a class="home-button" href="javascript:history.back()">Exit</a>
+    <div class="blank-part"></div>
+    <div class="blank-part"></div>
+    <div class="blank-part"></div>
+    <div class="blank-part"></div>
+  </div>
+  <div class="footer">
+    <p>Kyiv, Ukraine</p>
+    <p>©️2023 ukraine2023gsg</p>
+    <div class="blank-part"></div>
+  </div>
+ <div class="cookie-banner">
+    This website uses cookies to ensure you get the best experience. By using this website, you agree to our <a href="./cok">cookie policy</a>.
+    <button onclick="acceptCookies()">Got it!</button>
+ </div>
 </body>
 </html>
