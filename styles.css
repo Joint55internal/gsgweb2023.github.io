@@ -41,6 +41,11 @@ body {
   height: 120px; /* Adjust the height as desired */
   width: auto; /* The width will adjust proportionally based on the height */
 }
+.icon {
+  height: 50px;
+  width: auto;
+  margin-bottom: 0%;
+}
 a {
   text-decoration: none; /* Remove the default underline */
 }
