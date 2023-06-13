@@ -191,3 +191,19 @@ body {
     padding: 5px 10px;
     cursor: pointer;
   }
+.share-button {
+  padding: 10px 20px;
+  background-color: #0040ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.home-button {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
