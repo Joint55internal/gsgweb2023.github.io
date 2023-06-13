@@ -156,6 +156,10 @@ h3 {
   text-decoration: none;
   display: block;
 }
+.dropdown-content a:hover {
+  color: #ff0000;
+  text-decoration: underline; /* Add underline on hover */
+}
 .dropdown:hover .dropdown-content {
   display: block;
 }
