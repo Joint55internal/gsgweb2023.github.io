@@ -41,6 +41,12 @@ body {
   height: 120px; /* Adjust the height as desired */
   width: auto; /* The width will adjust proportionally based on the height */
 }
+a {
+  text-decoration: none; /* Remove the default underline */
+}
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
 h1 {
   font-family: 'a-2';
     /* Apply the BundessansWeb-Bold font to h1 elements */
@@ -48,6 +54,7 @@ h1 {
 h2 {
   color: #00308f;
   font-family: 'a-2';
+  text-decoration: none; /* Remove the default underline */
 }
 h3 {
   font-family: 'a-1';
@@ -197,12 +204,4 @@ h3 {
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none; /* Remove underline */
-}
-a {
-  text-decoration: none; /* Remove the default underline */
-}
-
-/* Apply the underline only when hovering */
-a:hover {
-  text-decoration: underline; /* Add underline on hover */
 }
