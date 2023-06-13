@@ -5,7 +5,4 @@ var currentURL = encodeURIComponent(window.location.href);
 var message = "Check out this page: " + currentURL;
 
 // Update the href attribute for Line sharing
-document.getElementById("line-share").href = "https://line.me/R/msg/text/?" + encodeURIComponent(message);
-
-// Update the href attribute for WhatsApp sharing
-document.getElementById("whatsapp-share").href = "https://wa.me/?text=" + encodeURIComponent(message);
+document.getElementById("line-share").href = "https://line.me/R/msg/text/I wanted to share this with you!" + encodeURIComponent(message);
