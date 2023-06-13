@@ -1,8 +1,16 @@
-// Get the current URL
-var currentURL = encodeURIComponent(window.location.href);
-
-// Get the message to be shared
-var message = "Check out this page: " + currentURL;
-
-// Update the href attribute for Line sharing
-document.getElementById("line-share").href = "https://line.me/R/msg/text/I wanted to share this with you!" + encodeURIComponent(message);
+function shareViaLine() {
+    var currentURL = encodeURIComponent(window.location.href);
+    var message = "Check out this page: " + currentURL;
+    var lineShareURL = "https://line.me/R/msg/text/?" + encodeURIComponent(message);
+    window.open(lineShareURL, "_blank");
+  }
+  // Function to share via WhatsApp
+function shareViaWhatsApp() {
+    var currentURL = encodeURIComponent(window.location.href);
+    var message = "Check out this page: " + currentURL;
+    var whatsappShareURL = "https://wa.me/?text=" + encodeURIComponent(message);
+    window.open(whatsappShareURL, "_blank");
+  }
+  // Attach event listeners to the sharing buttons
+document.getElementById("line-share").addEventListener("click", shareViaLine);
+document.getElementById("whatsapp-share").addEventListener("click", shareViaWhatsApp);
