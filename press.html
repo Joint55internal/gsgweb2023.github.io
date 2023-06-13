@@ -28,6 +28,14 @@
       localStorage.setItem('cookieConsent', true);
     }
   </script>
+  <script>
+    function shareWithEmail() {
+        var subject = "Check out this website!";
+        var body = "I wanted to share this website with you. Here's the link: " + window.location.href;
+        var mailtoLink = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        window.location.href = mailtoLink;
+    }
+ </script>
 </head>
 <body>
   <div class="header">
@@ -78,14 +86,18 @@
   </div>
   <div class="content">
     <h2>STATEMENTS AND RELEASES</h2>
+    <p>The Office of the Spokesperson releases statements, media notes, notices to the press and fact sheets on a daily basis. These are posted to our website as they are released throughout the day.</p>
+    <button class="share-button" onclick="shareWithEmail()">Share via Email</button>
+    <div class="blank-part"></div>
+    <p>------ Media Note</p>
     <h3>
       <a href="./presscf65">Press Conference by Press and Information office of Ukraine</a>
     </h3>
     <p> 
-      June 5, 2023
+      June 5, 2023 | Press and Information Office | RY303
     </p>
-    <p>
-        ==================================================
+    <p> --------------------------------------------------
+        
     </p>
   </div>
   <div class="blank-part"></div>
