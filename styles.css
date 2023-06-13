@@ -198,3 +198,11 @@ h3 {
   cursor: pointer;
   text-decoration: none; /* Remove underline */
 }
+a {
+  text-decoration: none; /* Remove the default underline */
+}
+
+/* Apply the underline only when hovering */
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
