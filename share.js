@@ -14,3 +14,10 @@ function shareViaWhatsApp() {
   // Attach event listeners to the sharing buttons
 document.getElementById("line-share").addEventListener("click", shareViaLine);
 document.getElementById("whatsapp-share").addEventListener("click", shareViaWhatsApp);
+
+function shareWithEmail() {
+  var subject = "Check out this website!";
+  var body = "I wanted to share this website with you. Here's the link: " + window.location.href;
+  var mailtoLink = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  window.location.href = mailtoLink;
+}
