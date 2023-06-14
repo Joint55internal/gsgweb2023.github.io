@@ -237,3 +237,22 @@ h3 {
   font-size: 100px;
   text-align: center;
 }
+.foldable-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.foldable-content.open {
+  max-height: 1000px; /* Adjust this value to your desired maximum height */
+}
+
+.foldable-button::after {
+  content: '^';
+  display: inline-block;
+  transition: transform 0.2s ease-out;
+}
+
+.foldable-content.open + .foldable-button::after {
+  transform: rotate(180deg);
+}
