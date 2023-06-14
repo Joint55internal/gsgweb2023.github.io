@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="slogo2.png" type="image/x-icon">
+  <title>Ukraine GSG Website | Press Release</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+  <script src="./function.js"></script>
+  <script src="./share.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QT60QMQ9CT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QT60QMQ9CT');
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var consentCookie = localStorage.getItem('cookieConsent');
+      if (!consentCookie) {
+        $('.cookie-banner').fadeIn();
+      }
+    });
+
+    function acceptCookies() {
+      $('.cookie-banner').fadeOut();
+      localStorage.setItem('cookieConsent', true);
+    }
+  </script>
+
+</head>
+<body>
+  <div class="header">
+    <a href="./"><img src="gsglogo.png" alt="Logo" class="logo"></a>
+    <h1 class="header-text"></h1>
+    <div class="header-links">
+      <div class="dropdown">
+        <button class="dropbtn">
+          <div class="menu-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        </button>
+             <div class="dropdown-content">
+                <a href="./">EN</a>
+                <a href="./de">DE</a>
+                <a href="./about">InFo</a>                         
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <div class="dropdown-row">
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="./">Home</a>
+        <a href="./about">About</a>
+        <a href="./policy">Policy-Issues</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">News</button>
+      <div class="dropdown-content">
+        <a href="./news">News</a>
+        <a href="./press">Press Release</a>
+        <a href=".agression">Russian Agression</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">European Integration</button>
+      <div class="dropdown-content">
+        <a href="./">Partnership</a>
+        <a href="./eucope">Cooperation with the Council of Europe </a>
+        <a href="./announce">Implementation of the EU-Ukraine Association Agreement</a>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <h1>Countering Russian Agression</h1>
+    <button class="share-button" onclick="shareWithEmail()">Share via Email</button>
+    <button class="line-button" id="line-share" onclick="shareViaLine()">LINE</button>
+    <button class="what-button" id="whatsapp-share" onclick="shareViaWhatsApp()">WhatsApp</button>
+  </div>
+  <div class="content2">
+    <p>
+        ------
+    </p>
+    <h2>
+        <a href="crimia">Temporary Occupation of Crimea and City of Sevastopol</a>
+    </h2>
+    <p>
+        Crimea belongs to the regions with the oldest history. Some archaeological finds indicate its possible settlement a million years ago. Crimea was first mentioned in written sources three thousand years ago.
+    </p>
+    <p>
+        --------------------------------------------------
+    </p>
+    <p>
+        ------
+    </p>
+    <h3>
+      <a href="qara">Key Q&A on Russia's Agression</a>
+    </h3>
+    <div class="blank-part"></div>
+    <p> 
+      --------------------------------------------------
+    </p>
+    <p>------</p>
+    <h3>
+      <a href="./presscf615">Grain from Ukraine</a>
+    </h3>
+    <div class="blank-part"></div>
+    <p> 
+      --------------------------------------------------
+    </p>
+  </div>
+  <div class="footer">
+    <p>Kyiv, Ukraine</p>
+    <p>©️2023 ukraine2023gsg</p>
+    <div class="blank-part"></div>
+  </div>
+ <div class="cookie-banner">
+    This website uses cookies to ensure you get the best experience. By using this website, you agree to our <a href="./cok">cookie policy</a>.
+    <button onclick="acceptCookies()">Got it!</button>
+ </div>
+</body>
+</html>
