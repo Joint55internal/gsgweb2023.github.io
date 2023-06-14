@@ -1,6 +1,10 @@
-const foldableButton = document.querySelector('.foldable-button');
-const foldableContent = document.querySelector('.foldable-content');
+document.addEventListener('DOMContentLoaded', function() {
+  const foldableButtons = document.querySelectorAll('.foldable-button');
+  const foldableContents = document.querySelectorAll('.foldable-content');
 
-foldableButton.addEventListener('click', function() {
-  foldableContent.classList.toggle('open');
+  for (let i = 0; i < foldableButtons.length; i++) {
+    foldableButtons[i].addEventListener('click', function() {
+      foldableContents[i].classList.toggle('open');
+    });
+  }
 });
