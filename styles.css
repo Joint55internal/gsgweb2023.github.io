@@ -41,11 +41,6 @@ body {
   height: 120px; /* Adjust the height as desired */
   width: auto; /* The width will adjust proportionally based on the height */
 }
-.logo-404 {
-  height: 50px; /* Adjust the height as desired */
-  width: auto; /* The width will adjust proportionally based on the height */
-  text-align: center;
-}
 .icon {
   height: 50px;
   width: auto;
