@@ -248,7 +248,6 @@ h3 {
 }
 
 .foldable-button::after {
-  content: '^';
   display: inline-block;
   transition: transform 0.2s ease-out;
 }
