@@ -101,9 +101,9 @@ h3 {
 .content3 {
   text-align: left;
   padding: 20px;
-  margin: 20px auto 20px; /* Adjust the top and bottom margin to create space for the fixed header */
-  max-width: 750px;
-  background-color: #faffc5;
+  margin: 10px auto 30px; /* Adjust the top and bottom margin to create space for the fixed header */
+  max-width: 790px;
+  background-color: #fefff4;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
