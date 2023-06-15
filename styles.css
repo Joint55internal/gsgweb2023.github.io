@@ -192,6 +192,13 @@ h3 {
   color: #000;
   text-decoration: underline;
 }
+.marker2 {
+  background-color: yellow;
+  padding: 2px 4px;
+  color: #000;
+  text-decoration: none;
+}
+
 .blank-part {
   height: 50px; /* Adjust the height as desired */
 }
