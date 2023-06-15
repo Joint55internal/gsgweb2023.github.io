@@ -114,7 +114,7 @@ h3 {
 }
 
 .foldable-content.open {
-  max-height: 2000px; /* Adjust this value to your desired maximum height */
+  max-height: 10000px; /* Adjust this value to your desired maximum height */
 }
   
 .footer {
