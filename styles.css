@@ -246,6 +246,12 @@ h3 {
   font-size: 100px;
   text-align: center;
 }
+.foldable-button {
+  padding: 10px 20px;
+  background-color: #eaeaea;
+  color: #000000;
+  border-radius: 4px;
+}
 .foldable-button::after {
   padding: 10px 20px;
   background-color: #eaeaea;
