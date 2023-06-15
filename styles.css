@@ -252,6 +252,7 @@ h3 {
   color: #000000;
   font-size: 16px;
   border-radius: 4px;
+  margin-bottom: 1cm;
 }
 .foldable-button::after {
   display: inline-block;
