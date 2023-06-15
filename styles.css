@@ -98,6 +98,15 @@ h3 {
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
+.foldable-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.foldable-content.open {
+  max-height: 2000px; /* Adjust this value to your desired maximum height */
+}
   
 .footer {
   background-color: #005bb5;
@@ -237,16 +246,6 @@ h3 {
   font-size: 100px;
   text-align: center;
 }
-.foldable-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-.foldable-content.open {
-  max-height: 1000px; /* Adjust this value to your desired maximum height */
-}
-
 .foldable-button::after {
   display: inline-block;
   transition: transform 0.2s ease-out;
