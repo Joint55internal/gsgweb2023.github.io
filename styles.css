@@ -247,6 +247,10 @@ h3 {
   text-align: center;
 }
 .foldable-button::after {
+  padding: 10px 20px;
+  background-color: #eaeaea;
+  color: #000000;
+  border-radius: 4px;
   display: inline-block;
   transition: transform 0.2s ease-out;
 }
