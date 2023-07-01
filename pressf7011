@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="icon" href="slogo2.png" type="image/x-icon">
-  <title>Ukraine GSG Website</title>
+  <title>Ukraine GSG Website | Press Release</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles.css">
   
@@ -30,6 +30,7 @@
       localStorage.setItem('cookieConsent', true);
     }
   </script>
+  
 </head>
 <body>
   <div class="header">
@@ -47,7 +48,7 @@
              <div class="dropdown-content">
                 <a href="./">EN</a>
                 <a href="./de">DE</a>
-                <a href="./about">InFo</a>
+                <a href="./about">InFo</a>            
               </div>
             </div>
           </div>
@@ -71,113 +72,66 @@
       </div>
     </div>
     <div class="dropdown">
-      <button class="dropbtn">European Integration</button>
-      <div class="dropdown-content">
-        <a href="./">Partnership</a>
-        <a href="./eucope">Cooperation with the Council of Europe </a>
+        <button class="dropbtn">European Integration</button>
+        <div class="dropdown-content">
+          <a href="./">Partnership</a>
+          <a href="./eucope">Cooperation with the Council of Europe </a>
+        </div>
       </div>
-    </div>
   </div>
-  <p><input type="text" class="myInput" id="Input" onkeyup="filterFunction()" placeholder="Search for repos..." title="Type in keyword" aria-label="repo search" /></p>
   <div class="content">
-    <h2>
-      Welcome to the official website of Ukraine at Global Simulation Game (GSG). Here, you will find information about our government.
-    </h2>
-    <p class="marker">
-      Disclaimer: This website is not an actual government website of Ukraine. It is intended solely for participants of GSG 2023.
-    </p>
-    <p>
-      On this website, you will find information about our government, policies, news, and initiatives. Stay up to date with the latest developments and explore the various resources available to learn more about Ukraine's role in the global community.
-    </p>
-    <p>
-      Whether you are a delegate, an observer, or simply interested in learning about Ukraine's participation in GSG, we invite you to explore our website and discover the work we are doing to create a better world.
-    </p>
-    <div class="blank-part"></div>
-    <a class="share-button" href="./about">About</a>
-    <a class="share-button" href="./press">Press Release</a>
-    <a class="share-button" href="./contact">Contact us</a>
-  </div>
-
-  <div class="content2">
-  <h2>
-      Announcement from Ukraine
-    </h2>
-    <p>
-      ------ New
-    </p>
+    <h4>Press release</h4>
+    <h2>Announcement from the Press and Information Office</h2>
     <h3>
-      <a href="./presscf7011">July 1st, 2023 - Press Conference- To Media Representitives</a>
-      </h3>
-     <p>
-       Ukraine will host Press Conference at 01:30 PM at KG 214...
-     </p>
-     <p>
-       ------
-     </p>
-    <h3>
-      <a href="./presscf619">June 17th, 2023 - Press Conference- To Media Representitives
-      </a>
+        INVITATION to the Media/ Organizations/ Institution
     </h3>
     <p>
-      ------
-    </p>
-    <h3>
-      <a href="./crimia">Temporary Occupation of Crimea and City of Sevastopol</a>
-    </h3>
-    <p>
-      ------
-    </p>
-   <h3>
-     <a href="./presscf64">June 4th, 2023 - Press Conference- To Media Representitives</a>
-     </h3>
-    <p>
-      Ukraine will host Press Conference at 11:30 AM at RY303...
+        ==================================================
     </p>
     <p>
-      ------
-    </p>
-   <h3>
-   <a href="./64">June 4th, 2023</a>
-   </h3>
-   <p>
-   We are delighted to announce the launch of our offical website, designed to provide...
-   </p>
-   <p>
-    ------
-  </p>
-  </div>
-  <div class="content2">
-    <h2>
-      Latest News
-    </h2>
-    <h3>
-      Russia destroys Kakhovka Dam
-    </h3>
-    <p>
-     ・Destruction of the Kakhovka Dam were caused by Russian forces...
-    </p>
-    <h3>
-      Russia targets airbase
-    </h3>
-    <p>
-     ・Two cruise missiles fired by Russian forces hit an airfield in central Ukraine, while four others were downed by the air defences.
+        From: Press and Information Office
     </p>
     <p>
-     ・An air raid hit a residential district in the central Ukrainian city of Dnipro, killing a two-year-old girl and injuring 22 others.
+        Published 1 July 2023
     </p>
-    <h3>
-    Russian attack wounds 20, including children in Dnipro, Ukraine
-    </h3>
-  </div>
-  <div class="content2">
+    <p>
+        ===================================================
+    </p>
+    <p>
+       Goverment of Ukraine is inviting the representatives from media, organizations and institutions to the pressconferecene on July 1st. This conference aims to provide general information on our policy and present updates from the Government of Ukraine.
+    </p>
+    <p>
+        Date: Saturday July 1th, 2023 
+    </p>
+    <p>
+        Time: 01:00 PM
+    </p>
+    <p>
+        Venue: KG:214
+    </p>
+    <p>
+        *In the event of any changes to the plans, updates will be promptly posted on our website, and you will receive email notifications."
+    </p>
+    <p>
+        During the press conference, we will discuss various government policies and initiatives. Your presence and coverage are greatly appreciated.
+    </p>
     <h3>
         Share this page
     </h3>
     <button class="share-button" onclick="shareWithEmail()">Share via Email</button>
     <button class="line-button" id="line-share" onclick="shareViaLine()">LINE</button>
     <button class="what-button" id="whatsapp-share" onclick="shareViaWhatsApp()">WhatsApp</button>
+    
+    <h4>
+        Published on 1 July 2023
+    </h4>
+    <p>
+        ==================================================
+    </p>
+    <a class="home-button" href="./">Home</a>
+    <a class="home-button" href="javascript:history.back()">Exit</a>
   </div>
-  <div class="footer">
+    <div class="footer">
     <p>Kyiv, Ukraine</p>
     <p>©️2023 Ukraine2023GSG</p>
     <div class="blank-part"></div>
